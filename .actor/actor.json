@@ -1,0 +1,47 @@
+{
+  "actorSpecification": 1,
+  "name": "producthunt-scraper",
+  "title": "ProductHunt Launches & Topics Scraper",
+  "description": "Scrape newly launched products, AI tools, and SaaS from ProductHunt across tech, AI, productivity, and marketing categories with clean taglines, product URLs, and launch dates.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "dockerfile": "./Dockerfile",
+  "categories": [
+    "LEAD_GENERATION",
+    "MARKETING"
+  ],
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "ProductHunt Launches Dataset",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "name",
+              "tagline",
+              "url",
+              "category",
+              "publishedAt",
+              "postId"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": {
+              "name": { "label": "Product Name" },
+              "tagline": { "label": "Tagline" },
+              "url": { "label": "Product URL" },
+              "category": { "label": "Category" },
+              "publishedAt": { "label": "Launch Date" },
+              "postId": { "label": "Post ID" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

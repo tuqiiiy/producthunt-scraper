@@ -1,0 +1,18 @@
+{
+  "name": "producthunt-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape trending products, newly launched AI tools, and SaaS from ProductHunt by category. Extracts product names, taglines, URLs, and launch dates.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "cheerio": "^1.0.0",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}
